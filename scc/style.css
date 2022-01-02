@@ -1,0 +1,143 @@
+:root {
+  --primere-text: #757575;
+  --title: #212121;
+  --secondary: #ffffff;
+  --bg-footer: #2f303a;
+  --accent: #2196f3;
+  --address-contact: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primere-text);
+  background-color: var(--secondary);
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent);
+}
+.accent {
+  color: var(--title);
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent);
+}
+.nav-contacts-item .nav-link {
+  color: var(--primere-text);
+}
+
+.nav-contacts-item .nav-link:focus,
+.nav-contacts-item .nav-link:hover {
+  color: var(--accent);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: #2f303a;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--secondary);
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title);
+}
+.pas-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title);
+}
+.pas-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.user-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title);
+}
+
+.user-text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.address-link-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-contact);
+  background: #000;
+}
+.address-item > .address-link-color {
+  color: var(--secondary);
+}
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--secondary);
+  background-color: var(--accent);
+}
+.portfolio-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title);
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primere-text);
+}

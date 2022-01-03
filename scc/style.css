@@ -5,6 +5,8 @@
   --bg-footer: #2f303a;
   --accent: #2196f3;
   --address-contact: rgba(255, 255, 255, 0.6);
+  --border-color: #ececec;
+  --border-secondary-color: #eeeeee;
 }
 
 body {
@@ -31,21 +33,19 @@ p {
   margin-bottom: 0;
 }
 
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
 }
 
-.portfolio-section {
-  outline: 2px solid tomato;
-}
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 /* шапка сайта */
@@ -124,7 +124,6 @@ p {
 
 /* секция героя */
 .hero {
-  outline: 2px solid tomato;
   padding-bottom: 94px;
   text-align: center;
 }
@@ -220,6 +219,9 @@ p {
 .team-item {
   width: calc((100% -90px) / 4);
   margin-right: 30px;
+  border-bottom: 1px solid var(--border-secondary-color);
+  border-left: 1px solid var(--border-secondary-color);
+  border-right: 1px solid var(--border-secondary-color);
 }
 
 .team-item:nth-child(4n) {
@@ -237,6 +239,8 @@ p {
 }
 
 .user-text {
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
 }
@@ -297,27 +301,21 @@ p {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   margin: -15px;
 }
 
 .portfolio-item {
-  /* width: calc((100% -60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px; */
   width: 370px;
   margin: 15px;
+  border-bottom: 1px solid var(--border-secondary-color);
+  border-left: 1px solid var(--border-secondary-color);
+  border-right: 1px solid var(--border-secondary-color);
 }
 
-/* .portfolio-item:nth-child(3) {
-  margin-right: 0;
-}
-
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-} */
 .portfolio-title {
   margin-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
 
   color: var(--title);
   font-weight: bold;
@@ -327,7 +325,7 @@ p {
 }
 .portfolio-img {
   margin-bottom: 20px;
-  /* width: 370px; */
+  width: 370px;
   height: 294px;
 }
 
@@ -335,6 +333,10 @@ p {
   text-decoration: none;
 }
 .portfolio-text {
+  margin-bottom: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--primere-text);

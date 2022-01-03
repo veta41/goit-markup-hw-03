@@ -10,14 +10,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./scc/style.css">
 </head>
    <body>
 
-    <header>
-        <div class="container">
-            <nav class="nav">
+    <header class="page-header">
+        <div class="container main-nav">
+            <nav class="site-nav" >
                 <a class=" nav-logo" href="#">Web<span class="accent">Studio</span></a>
             
                 <ul class="list nav-list">
@@ -42,32 +43,31 @@
                 </li>
             </ul>
         </div>
-        
     </header>
 
     <main>
-        <section class="section">
-            <h1 class="title">Эффективные решения <br/> для вашего бизнеса</h1>
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения <br/> для вашего бизнеса</h1>
             <button class="btn" type="button">Заказать услугу</button>
         </section>
 
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Наши преимущества</h2>
-                <ul class="list main-list">
-                    <li>
+                <ul class="list pas-list">
+                    <li class="pas-item">
                         <h3 class="pas-title">Внимание к деталям</h3>
                         <p class="pas-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="pas-item">
                         <h3 class="pas-title">Пунктуальность</h3>
                         <p class="pas-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="pas-item">
                         <h3 class="pas-title">Планирование</h3>
                         <p class="pas-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="pas-item">
                         <h3 class="pas-title">Современные технологии</h3>
                         <p class="pas-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 
@@ -77,13 +77,13 @@
             
         </section>
 
-        <section class="section">
+        <section class="section no-padding">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="list main-list">
-                    <li class="main-list"> <img src="./images/img_1.jpg" alt="блок1" width="370"></li>
-                    <li class="main-list"> <img src="./images/img_2.jpg" alt="блок2" width="370"></li>
-                    <li class="main-list"> <img src="./images/img_3.jpg" alt="блок3" width="370"></li>
+                <ul class="list work-list">
+                    <li class="work-item "> <img src="./images/img_1.jpg" alt="блок1" width="370"></li>
+                    <li class="work-item "> <img src="./images/img_2.jpg" alt="блок2" width="370"></li>
+                    <li class="work-item "> <img src="./images/img_3.jpg" alt="блок3" width="370"></li>
                 </ul>
             </div>
                 
@@ -92,35 +92,35 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="list main-list">
+                <ul class="list team-list">
                 
-                    <li class="main-list">
+                    <li class="team-item">
                 
-                        <img src="./images/team_card_1.jpg" alt="наш продактменеджер" width="370">
+                        <img class="user-img" src="./images/team_card_1.jpg" alt="наш продактменеджер" width="270">
                         <h3 class="user-team">Игорь Демьяненко</h3>
                         <p class="text" lang="en">Product Designe</p>
                 
                     </li>
                 
-                    <li class="main-list">
+                    <li class="team-item">
                 
-                        <img src="./images/team_card_2.jpg" alt="наш разработчик" width="370">
+                        <img class="user-img" src="./images/team_card_2.jpg" alt="наш разработчик" width="270">
                         <h3 class="user-team">Ольга Репина</h3>
                         <p class="user-text" lang="en">Frontend Developer</p>
                 
                     </li>
                 
-                    <li class="main-list">
+                    <li class="team-item">
                 
-                        <img src="./images/team_card_3.jpg" alt="наш маркетолог" width="370">
+                        <img class="user-img" src="./images/team_card_3.jpg" alt="наш маркетолог" width="270">
                         <h3 class="user-team">Николай Тарасов</h3>
                         <p class="user-text" lang="en">Marketing</p>
                 
                     </li>
                 
-                    <li class="main-list">
+                    <li class="team-item">
                 
-                        <img src="./images/team_card_4.jpg" alt="наш дизайнер" width="370">
+                        <img class="user-img" src="./images/team_card_4.jpg" alt="наш дизайнер" width="270">
                         <h3 class="user-team">Михаил Ермаков</h3>
                         <p class="user-text" lang="en">UI Designer</p>
                 
@@ -131,21 +131,21 @@
             
     </main>
 
-    <footer>
+    <footer class="section">
         <div class="container">
-            <a href="#" class=" nav-logo">Web<span class="accent">Studio</span></a>
+            <a href="#" class=" nav-logo ">Web<span class="accent">Studio</span></a>
             
-            <address>
+            <address class="address">
                 <ul class="list address-list">
                     <li class="address-item">
                         <a class="address-link-contact address-link-color"
                             href="https://www.google.com/maps/d/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
                             target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li>
+                    <li class="address-item">
                         <a class="address-link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li>
+                    <li class="address-item">
                         <a class="address-link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>

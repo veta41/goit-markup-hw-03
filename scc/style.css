@@ -298,21 +298,24 @@ p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  margin: -15px;
 }
 
 .portfolio-item {
-  width: calc((100% -60px) / 3);
+  /* width: calc((100% -60px) / 3);
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
+  width: 370px;
+  margin: 15px;
 }
 
-.portfolio-item:nth-child(3) {
+/* .portfolio-item:nth-child(3) {
   margin-right: 0;
 }
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 .portfolio-title {
   margin-bottom: 4px;
 

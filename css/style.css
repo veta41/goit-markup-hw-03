@@ -86,7 +86,7 @@ p {
 
 .nav-logo {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
@@ -94,6 +94,11 @@ p {
 .accent {
   color: var(--title);
 }
+
+.active a {
+  color: var(--accent);
+}
+
 .nav-link {
   text-decoration: none;
   font-weight: 500;
@@ -144,7 +149,7 @@ p {
   margin-bottom: 200px;
   min-width: 200px;
   height: 50px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -156,7 +161,7 @@ p {
 }
 .section-title {
   margin-bottom: 50px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -180,7 +185,7 @@ p {
 .pas-title {
   margin-bottom: 10px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -229,6 +234,7 @@ p {
 }
 .user-team {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -246,6 +252,9 @@ p {
 }
 /* подвал сайта */
 
+.footer-bg {
+  background-color: var(--bg-footer);
+}
 .address {
   margin-top: 20px;
 }
@@ -254,7 +263,6 @@ p {
   font-size: 14px;
   line-height: 1.71;
   color: var(--address-contact);
-  background: #000;
 }
 .address-item > .address-link-color {
   color: var(--secondary);
@@ -264,6 +272,9 @@ p {
   margin-bottom: 9px;
 }
 
+.accent-fr {
+  color: var(--secondary);
+}
 /* Портфолио */
 
 .portfolio-section {
@@ -318,7 +329,7 @@ p {
   margin-left: 24px;
 
   color: var(--title);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

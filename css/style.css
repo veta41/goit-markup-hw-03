@@ -2,7 +2,8 @@
   --primere-text: #757575;
   --title: #212121;
   --secondary: #ffffff;
-  --bg-footer: #2f303a;
+  --background: #2f303a;
+  --background-team: #f5f4fa;
   --accent: #2196f3;
   --address-contact: rgba(255, 255, 255, 0.6);
   --border-color: #ececec;
@@ -16,10 +17,22 @@ body {
   background-color: var(--secondary);
 }
 
-.list {
+.ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 h1,
@@ -57,7 +70,7 @@ p {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  align-items: center;
 }
 
 .site-nav .nav-logo {
@@ -95,7 +108,7 @@ p {
   color: var(--title);
 }
 
-.active a {
+.nav-item > .active {
   color: var(--accent);
 }
 
@@ -111,15 +124,15 @@ p {
 .nav-link:focus {
   color: var(--accent);
 }
-.nav-contacts-item {
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
+
 .nav-contacts-item + .nav-contacts-item {
   margin-left: 50px;
 }
 .nav-contacts-item .nav-link {
   color: var(--primere-text);
+
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .nav-contacts-item .nav-link:focus,
@@ -129,24 +142,23 @@ p {
 
 /* секция героя */
 .hero {
-  padding-bottom: 94px;
+  background: var(--background);
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
-  padding-top: 200px;
-  padding-bottom: 280px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary);
-  background: #2f303a;
 }
 
 .btn {
-  margin-bottom: 200px;
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -184,7 +196,7 @@ p {
 
 .pas-title {
   margin-bottom: 10px;
-  text-align: center;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -206,16 +218,23 @@ p {
   margin-right: 30px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .work-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .no-padding {
   padding-top: 0;
-  padding-bottom: 0;
 }
 /* наша команда */
-
+.background-team {
+  background-color: var(--background-team);
+}
 .team-list {
   display: flex;
   text-align: center;
@@ -244,6 +263,10 @@ p {
   margin-bottom: 30px;
 }
 
+.team-footer {
+  background-color: var(--secondary);
+}
+
 .user-text {
   margin-bottom: 30px;
 
@@ -252,8 +275,8 @@ p {
 }
 /* подвал сайта */
 
-.footer-bg {
-  background-color: var(--bg-footer);
+.footer {
+  background-color: var(--background);
 }
 .address {
   margin-top: 20px;

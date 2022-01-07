@@ -17,15 +17,14 @@ body {
   background-color: var(--secondary);
 }
 
-.ul {
-  list-style: none;
+.list {
   margin: 0;
   padding: 0;
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -81,6 +80,7 @@ p {
 
 .nav-list {
   display: flex;
+  list-style: none;
 }
 
 .nav-list .nav-link {
@@ -95,6 +95,7 @@ p {
 .nav-contacts-list {
   display: flex;
   margin-left: auto;
+  list-style: none;
 }
 
 .nav-logo {
@@ -183,6 +184,7 @@ p {
 /* преимущества */
 .pas-list {
   display: flex;
+  list-style: none;
 }
 
 .pas-item {
@@ -211,6 +213,7 @@ p {
 /* работы */
 .work-list {
   display: flex;
+  list-style: none;
 }
 
 .work-item {
@@ -238,14 +241,15 @@ img {
 .team-list {
   display: flex;
   text-align: center;
+  list-style: none;
 }
 
 .team-item {
   width: calc((100% -90px) / 4);
   margin-right: 30px;
-  border-bottom: 1px solid var(--border-secondary-color);
-  border-left: 1px solid var(--border-secondary-color);
-  border-right: 1px solid var(--border-secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:nth-child(4n) {
@@ -259,17 +263,14 @@ img {
   line-height: 1.19;
   color: var(--title);
 }
-.user-img {
-  margin-bottom: 30px;
-}
 
 .team-footer {
   background-color: var(--secondary);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .user-text {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
 }
@@ -277,9 +278,16 @@ img {
 
 .footer {
   background-color: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   margin-top: 20px;
+  font-style: normal;
+}
+.address-list {
+  list-style: none;
+  padding: 0;
 }
 .address-link-contact {
   text-decoration: none;
@@ -291,11 +299,10 @@ img {
   color: var(--secondary);
 }
 
-.address-item {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.accent-fr {
+.address-item .accent-fr {
   color: var(--secondary);
 }
 /* Портфолио */
@@ -308,6 +315,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  list-style: none;
 }
 
 .filter-item {
@@ -332,24 +340,26 @@ img {
   background-color: var(--accent);
 }
 
-.portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-footer {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-secondary-color);
 }
 
 .portfolio-item {
   width: 370px;
   margin: 15px;
-  border-bottom: 1px solid var(--border-secondary-color);
-  border-left: 1px solid var(--border-secondary-color);
-  border-right: 1px solid var(--border-secondary-color);
 }
 
 .portfolio-title {
   margin-bottom: 4px;
-  margin-right: 24px;
-  margin-left: 24px;
 
   color: var(--title);
   font-weight: 700;
@@ -358,19 +368,15 @@ img {
   letter-spacing: 0.06em;
 }
 .portfolio-img {
-  margin-bottom: 20px;
-  width: 370px;
+  width: 355px;
   height: 294px;
 }
 
 .portfolio-link {
   text-decoration: none;
 }
-.portfolio-text {
-  margin-bottom: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
 
+.portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primere-text);

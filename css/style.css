@@ -298,7 +298,7 @@ img {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-item .accent-fr {
+.accent-fr {
   color: var(--secondary);
 }
 /* Портфолио */

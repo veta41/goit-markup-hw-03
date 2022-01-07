@@ -17,14 +17,10 @@ body {
   background-color: var(--secondary);
 }
 
-.list {
+.ul {
   margin: 0;
   padding: 0;
 }
-
-/* li {
-  list-style-type: none;
-} */
 
 .visually-hidden {
   position: absolute;

@@ -17,9 +17,10 @@ body {
   background-color: var(--secondary);
 }
 
-.ul {
+ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .visually-hidden {
@@ -76,7 +77,6 @@ p {
 
 .nav-list {
   display: flex;
-  list-style: none;
 }
 
 .nav-list .nav-link {
@@ -91,7 +91,6 @@ p {
 .nav-contacts-list {
   display: flex;
   margin-left: auto;
-  list-style: none;
 }
 
 .nav-logo {
@@ -180,7 +179,6 @@ p {
 /* преимущества */
 .pas-list {
   display: flex;
-  list-style: none;
 }
 
 .pas-item {
@@ -209,7 +207,6 @@ p {
 /* работы */
 .work-list {
   display: flex;
-  list-style: none;
 }
 
 .work-item {
@@ -237,7 +234,6 @@ img {
 .team-list {
   display: flex;
   text-align: center;
-  list-style: none;
 }
 
 .team-item {
@@ -282,10 +278,7 @@ img {
   margin-top: 20px;
   font-style: normal;
 }
-.address-list {
-  list-style: none;
-  padding: 0;
-}
+
 .address-link-contact {
   text-decoration: none;
   font-size: 14px;
@@ -312,7 +305,6 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  list-style: none;
 }
 
 .filter-item {
@@ -341,8 +333,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  list-style: none;
-  padding: 0;
 }
 
 .portfolio-footer {
